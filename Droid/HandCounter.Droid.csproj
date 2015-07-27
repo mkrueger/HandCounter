@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{056C3BA2-B9FE-47F5-8B9A-368B5E5BF874}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HandCounter.Droid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>HandCounter.Droid</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+  </ItemGroup>
+  <Import Project="..\HandCounter\HandCounter.projitems" Label="Shared" Condition="Exists('..\HandCounter\HandCounter.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Assets\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_1.png">
+      <Link>Assets\Images\c_1.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_10.png">
+      <Link>Assets\Images\c_10.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_2.png">
+      <Link>Assets\Images\c_2.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_3.png">
+      <Link>Assets\Images\c_3.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_4.png">
+      <Link>Assets\Images\c_4.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_5.png">
+      <Link>Assets\Images\c_5.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_6.png">
+      <Link>Assets\Images\c_6.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_7.png">
+      <Link>Assets\Images\c_7.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_8.png">
+      <Link>Assets\Images\c_8.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\c_9.png">
+      <Link>Assets\Images\c_9.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_1.png">
+      <Link>Assets\Images\b_1.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_2.png">
+      <Link>Assets\Images\b_2.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_3.png">
+      <Link>Assets\Images\b_3.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_4.png">
+      <Link>Assets\Images\b_4.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_5.png">
+      <Link>Assets\Images\b_5.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_6.png">
+      <Link>Assets\Images\b_6.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_7.png">
+      <Link>Assets\Images\b_7.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_8.png">
+      <Link>Assets\Images\b_8.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_9.png">
+      <Link>Assets\Images\b_9.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_10.png">
+      <Link>Assets\Images\b_10.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_11.png">
+      <Link>Assets\Images\b_11.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_12.png">
+      <Link>Assets\Images\b_12.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_13.png">
+      <Link>Assets\Images\b_13.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_14.png">
+      <Link>Assets\Images\b_14.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_15.png">
+      <Link>Assets\Images\b_15.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_16.png">
+      <Link>Assets\Images\b_16.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_17.png">
+      <Link>Assets\Images\b_17.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_18.png">
+      <Link>Assets\Images\b_18.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_19.png">
+      <Link>Assets\Images\b_19.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_20.png">
+      <Link>Assets\Images\b_20.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_21.png">
+      <Link>Assets\Images\b_21.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_22.png">
+      <Link>Assets\Images\b_22.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_23.png">
+      <Link>Assets\Images\b_23.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_24.png">
+      <Link>Assets\Images\b_24.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_25.png">
+      <Link>Assets\Images\b_25.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_26.png">
+      <Link>Assets\Images\b_26.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_27.png">
+      <Link>Assets\Images\b_27.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_28.png">
+      <Link>Assets\Images\b_28.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_29.png">
+      <Link>Assets\Images\b_29.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_30.png">
+      <Link>Assets\Images\b_30.png</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\iOS\Resources\Images\b_31.png">
+      <Link>Assets\Images\b_31.png</Link>
+    </AndroidAsset>
+  </ItemGroup>
+</Project>
